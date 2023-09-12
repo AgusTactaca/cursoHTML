@@ -1,0 +1,185 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  } */
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 100%;
+    font-size: 20px;
+    position: fixed;
+}
+.contenedor{
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Fondo negro */
+}
+header h1.fuente-acento{
+    margin: 0;
+    width: 100%;
+}
+header nav{
+    display: flex;
+}
+.lista-enlinea{
+    list-style: none; /* Quita los marcadores de lista */
+    padding: 0; /* Elimina el espacio de relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+.lista-enlinea header nav ul li{
+    display: inline; /* Hace que los elementos se muestren en línea */
+    margin-right: 10px; /* Añade un espacio entre los elementos (opcional) */
+}
+header li a{
+    color: white;
+    text-decoration: none;
+}
+header li a:hover{
+    color: aqua;
+}
+main{
+    background-color: rgb(236, 188, 236);
+}
+.p1{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.p2{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+.fl1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    float: right;
+    padding-right: 200px;
+}
+.fl2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    padding-left: 200px;
+}
+footer{
+    background-color: rgb(109, 182, 137);
+    border: 2px solid black;
+    text-align: center;
+}
+.fuente-clara {
+    color: #eeeeee;
+}
+.fuente-oscura {
+    color: #22211f;
+}
+.fuente-acento {
+    color: #b59a61;
+}
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    text-align: center;
+}
+li {
+    display: inline-block; /* Coloca los elementos en línea */
+    margin: 10px; /* Espaciado entre elementos */
+}
+.logos {
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Alto de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+footer ul li a:hover{
+    color: aqua;
+}
+footer ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header{
+        background-color: #b59a61;  
+    }
+    .fuente-acento{
+        color: white;
+        font-size: 20px;
+    }
+    header nav{
+        font-size: 15px;
+    }
+    main{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    main .fl1{
+        display: contents;
+        /* text-align: center; */
+        align-items: center;
+    }
+    main .fl2{
+        display: contents;
+        align-items: center;
+        /* width: 100vh; */
+    }
+    .checkbtn{
+        display: block;
+    }
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2c3e50;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    header nav ul li{
+        display: block;
+        margin: 0px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color: #2c3e50;
+    }
+}
+
+
