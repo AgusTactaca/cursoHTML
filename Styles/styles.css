@@ -14,7 +14,7 @@ header{
     align-items: center;
     background-color: rgba(128, 128, 128, 0.5);
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     position: fixed;
 }
 .contenedor{
@@ -31,14 +31,9 @@ header h1.fuente-acento{
 header nav{
     display: flex;
 }
-.lista-enlinea{
-    list-style: none; /* Quita los marcadores de lista */
-    padding: 0; /* Elimina el espacio de relleno predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
-}
-.lista-enlinea header nav ul li{
-    display: inline; /* Hace que los elementos se muestren en línea */
-    margin-right: 10px; /* Añade un espacio entre los elementos (opcional) */
+.menu{
+    display: flex;
+    margin: 0;
 }
 header li a{
     color: white;
@@ -48,7 +43,7 @@ header li a:hover{
     color: aqua;
 }
 main{
-    background-color: rgb(236, 188, 236);
+    background-color: rgb(201, 142, 94);
 }
 .p1{
     text-align: center;
@@ -76,9 +71,12 @@ main{
     padding-left: 200px;
 }
 footer{
-    background-color: rgb(109, 182, 137);
+    background-color: rgb(124, 73, 7);
     border: 2px solid black;
     text-align: center;
+}
+footer h1{
+    color: white;
 }
 .fuente-clara {
     color: #eeeeee;
@@ -108,7 +106,7 @@ footer ul li a:hover{
     color: aqua;
 }
 footer ul li a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 5px;
 }
@@ -154,6 +152,7 @@ footer ul li a{
     }
     .checkbtn{
         display: block;
+        line-height: 1;
     }
     header ul{
         position: fixed;
@@ -161,7 +160,7 @@ footer ul li a{
         height: 100vh;
         background-color: #2c3e50;
         text-align: center;
-        top: 80px;
+        top: 30px;
         left: 100%;
         transition: all 0.5s;
     }
