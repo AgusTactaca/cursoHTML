@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Fondo negro */
+    background-color: rgb(0, 0, 0); /* Fondo negro */
 }
 header h1.fuente-acento{
     margin: 0;
@@ -125,6 +125,9 @@ footer ul li a{
 /* Estilos para pantallas más pequeñas (hasta 768px) */
 @media (max-width: 768px) {
     /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    body{
+        display: flex;
+    }
     header{
         background-color: #b59a61;  
     }
